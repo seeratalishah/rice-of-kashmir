@@ -1,3 +1,6 @@
+.header {
+  height: 50vh;
+}
 .contact-section {
   position: relative;
   padding-top: 60px;
@@ -70,7 +73,7 @@ h4 {
   font-size: 24px;
 }
 
-.info-section span{
+.info-section span {
   border-bottom: 1px solid #ffe000;
   padding-bottom: 15px;
 }
@@ -109,5 +112,14 @@ h4 {
   }
   .contact-form {
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .col-md-12 {
+    margin-bottom: 30px;
+  }
+  .info-section{
+    border-radius: 8px !important;
   }
 }

@@ -5,7 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.header {
+  height: 50vh;
+}
 .recipe-section {
     margin-bottom: 60px;
 }
@@ -63,3 +65,12 @@ ul li, ol, li{
     top: -2%; /* Adjust top position as needed */
     transform: translateY(-50%);
   }
+
+  @media screen and (max-width: 550px) {
+    .featured-recipes{
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+ 
