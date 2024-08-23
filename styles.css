@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Prata&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Common styles  */
+
+body {
+  font-family: "Inter", system-ui;
+  color: #000000;
+}
+
+img {
+  width: 100%;
+}
+
+h2{
+  font-family: "Prata", serif;
+}
+
+.long-para {
+  max-width: 500px;
+}
+
+.primary-btn {
+  background-color: #fdd61f;
+  border: none;
+  color: black;
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Inter", system-ui;
+}
+
+.secondary-btn {
+  border: none;
+  color: #000000;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Inter", system-ui;
+  border: 1px solid white;
+}
+
+/* Header Styles  */
+
+.header {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 150px 20px;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+  font-family: "Prata", serif;
+}
+
+/* Navbar styles  */
+
+/* styles.css */
+.navbar {
+  background-color: transparent !important;
+  border: none;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item .active {
+  color: #fdd61f !important;
+}
+
+.navbar-toggler{
+  color: white !important;
+  background-color: white !important;
+}
+
+/* Small screens: Align menu items to the right */
+@media only screen and (max-width: 993px) {
+  .navbar-collapse {
+    background-color: green !important;
+    border-radius: 6px !important;
+    margin-top: 10px !important;
+  }
+}
+
+/* Logo font  */
+.styled-text {
+  font-family: "Island Moments", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+/* About Styles  */
+
+.about-section {
+  margin-top: 60px;
+}
+
+.about-logo {
+  color: #c0ad1f;
+  font-family: "Island Moments", system-ui;
+  font-weight: 550;
+}
+
+/* Featured styles  */
+
+.featured-section-container{
+  position: relative;
+  width: 100%;
+}
+
+.featured-card-img img{
+  width: 400px;
+}
+
+.featured-card-img{
+  position: absolute;
+  top: -80px;
+  left: 32%;
+}
+
+.featured-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: none !important;
+  background-color: #28654f;
+  color: white;
+  min-height: 400px !important;
+  position: relative;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: #28654f;
+  border-radius: 16px !important;
+}
+
+.featured-section h2 {
+  font-family: "Prata", serif;
+  text-align: center;
+  max-width: 350px;
+  font-size: 32px !important;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.featured-bg-image {
+  background-image: url("./assets/images/featured-bg.png"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  position: relative;
+}
+
+.featured-bg {
+  background-color: #1F4E3D; /* White background with 0.8 opacity */
+  padding: 20px;
+}
+
+.featured-section {
+  position: relative;
+  z-index: 2;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: 45px;
+  background-color: #c0ad1f;
+}
+
+.featured-title {
+  margin-top: 200px;
+  margin-bottom: 200px !important;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.featured-title img {
+  width: 150px;
+  height: 150px;
+}
+
+.card-text {
+  min-height: 150px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.card-title {
+  font-family: "Prata", serif;
+}
+
+/* Testimonials  */
+.testimonial-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  color: #333;
+}
+
+.carousel-item h2{
+  font-family: "Prata", serif;
+}
+
+.stars {
+  color: #ffc107;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.customer-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px 5px;
+}
+
+.customer-image img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #1F4E3D;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Footer  */
+
+.footer-section {
+  background-image: url('./assets/images/footer-bg.png'); /* Background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 200px 0 20px 0;
+  position: relative;
+  margin-top: 200px;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1F4E3D; /* Dark overlay for readability */
+  z-index: -1;
+}
+
+.footer-logo {
+  font-size: 54px !important;
+  color: #fff;
+  font-family: "Island Moments", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+
+.footer-title::after {
+  content: '';
+  display: block;
+  width: 20%; /* Half-width border */
+  height: 2px;
+  background-color: #FFE000; /* Yellow color */
+  margin-top: 10px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #FFD700; /* Hover color for links */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.contact-info li, .links li {
+  margin-bottom: 10px;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.copy-right{
+  border-top: 1px solid #FFE000;
+  padding-top: 20px;
+}
+
+/* Footer card  */
+
+.footer-card-container{
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.footer-card {
+  background-image: url('./assets/images/footer-card-bg.png'); /* Background image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 60px 120px 60px 90px;
+  position: relative;
+}
+
+.footer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #EFF3ED; /* Dark overlay for readability */
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.footer-card-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-card-image {
+  flex: 1;
+  position: relative;
+}
+
+.footer-image-left {
+  position: absolute;
+  top: -135px; /* Adjust this value to make the image overlap the card */
+  left: 20px;
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+  width: 100%;
+}
+
+.footer-card-text {
+  flex: 2;
+  padding-left: 220px; /* Space for the image */
+}
+
+.footer-card-text h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "Prata", serif;
+  max-width: 350px;
+}
+
+.footer-email-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-email-form input[type="email"] {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+}
+
+.footer-submit-btn {
+  background-color: #FFE000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #1F4E3D;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.footer-submit-btn i {
+  margin-left: 5px;
+}
+
+.footer-submit-btn:hover {
+  background-color: #ffcc00;
+}

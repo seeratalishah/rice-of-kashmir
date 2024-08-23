@@ -1,0 +1,56 @@
+.our-herritage{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.our-herritage-container{
+    background-color: #1F4E3D;
+    color: white;
+    position: relative;
+}
+
+.our-herritage p{
+    max-width: 700px;
+    text-align: center;
+}
+
+.our-herritage-title{
+    font-family: "Prata", serif;
+}
+
+.leave-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px; /* Adjust width as needed */
+    top: -2%; /* Adjust top position as needed */
+    transform: translateY(-50%);
+  }
+
+/* Pattern Styles */
+.section-header{
+    font-family: "Prata", serif;
+}
+
+.pattern-section img{
+    /* max-width: 500px; */
+    width: 100%;
+}
+
+.pattern-section p{
+    max-width: 400px;
+}
+
+.pattern-section .p-0{
+    padding: 0;
+}
+
+.why-choose h2, .why-choose p{
+    margin-left: 80px;
+}
+

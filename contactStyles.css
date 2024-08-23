@@ -1,0 +1,113 @@
+.contact-section {
+  position: relative;
+  padding-top: 60px;
+}
+
+.contact-container {
+  border-radius: 0.5rem;
+  border: 1px solid silver;
+  padding: 20px;
+}
+
+.contact-left-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-section {
+  background-color: #28654f; /* Bootstrap success green */
+  color: white;
+  padding: 1rem;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  bottom: 0;
+  border-radius: 12px;
+}
+
+.info-section img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.header-text {
+  text-align: center;
+  margin-bottom: 4rem; /* Space between text and form */
+  width: 100%;
+}
+
+.header-text p {
+  max-width: 600px;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.form-control {
+  border-radius: 30px !important;
+}
+
+.text-area {
+  border-radius: 10px !important;
+}
+
+h4 {
+  font-family: "Prata", serif;
+}
+
+.info-section i {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #ffe000;
+  color: #28654f;
+  font-size: 24px;
+}
+
+.info-section span{
+  border-bottom: 1px solid #ffe000;
+  padding-bottom: 15px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.info-section .fa-location-dot {
+  padding-inline: 19px;
+}
+
+.contact-img {
+  position: absolute;
+  max-width: 280px !important;
+  bottom: -50px;
+  right: -23px;
+}
+
+.white-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px; /* Adjust width as needed */
+  top: -2%; /* Adjust top position as needed */
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .info-section,
+  .contact-form {
+    border-radius: 0;
+  }
+  .contact-form {
+    padding-left: 0;
+  }
+}
